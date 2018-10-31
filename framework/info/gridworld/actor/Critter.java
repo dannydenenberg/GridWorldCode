@@ -18,6 +18,7 @@ package info.gridworld.actor;
 
 import info.gridworld.grid.Location;
 
+import java.awt.*;
 import java.util.ArrayList;
 
 /**
@@ -30,6 +31,8 @@ import java.util.ArrayList;
  */
 public class Critter extends Actor
 {
+
+
     /**
      * A critter acts by getting a list of other actors, processing that list,
      * getting locations to move to, selecting one of them, and moving to the
@@ -129,4 +132,6 @@ public class Critter extends Actor
         else
             moveTo(loc);
     }
+
+
 }

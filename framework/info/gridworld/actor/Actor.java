@@ -28,6 +28,11 @@ import java.awt.Color;
  */
 public class Actor
 {
+    /* Percent of the current color will be darkened by */
+    /* Added: 10-31-18 */
+    // lose 5% of color value in each step
+    public static final double DARKENING_FACTOR = 0.05;
+
     private Grid<Actor> grid;
     private Location location;
     private int direction;
@@ -62,6 +67,18 @@ public class Actor
         color = newColor;
     }
 
+    /**
+     * Darkens the actor by the percent of the DARKENING_FACTOR
+     */
+    public void darken()
+    {
+        Color c = getColor();
+        int red = (int) (c.getRed() * (1 - DARKENING_FACTOR));
+        int green = (int) (c.getGreen() * (1 - DARKENING_FACTOR));
+        int blue = (int) (c.getBlue() * (1 - DARKENING_FACTOR));
+
+        setColor(new Color(red, green, blue));
+    }
     /**
      * Gets the current direction of this actor.
      * @return the direction of this actor, an angle between 0 and 359 degrees
