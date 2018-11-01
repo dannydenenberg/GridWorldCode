@@ -31,6 +31,12 @@ import java.util.ArrayList;
  */
 public class CrabCritter extends Critter
 {
+    /* Percent of the current color will be darkened by */
+    /* Added: 10-31-18 */
+    // lose 5% of color value in each step
+    public static final double DARKENING_FACTOR = 0.05;
+
+
     public CrabCritter()
     {
         setColor(Color.RED);

@@ -30,6 +30,26 @@ import java.util.ArrayList;
  */
 public class ChameleonCritter extends Critter
 {
+    /* Percent of the current color will be darkened by */
+    /* Added: 10-31-18 */
+    // lose 5% of color value in each step
+    public static final double DARKENING_FACTOR = 0.05;
+
+
+    /**
+     * Darkens the actor by the percent of the DARKENING_FACTOR
+     */
+    public void darken()
+    {
+        Color c = getColor();
+        int red = (int) (c.getRed() * (1 - DARKENING_FACTOR));
+        int green = (int) (c.getGreen() * (1 - DARKENING_FACTOR));
+        int blue = (int) (c.getBlue() * (1 - DARKENING_FACTOR));
+
+        setColor(new Color(red, green, blue));
+    }
+
+
      /* Randomly selects a neighbor and changes this critter's color to be the
      * same as that neighbor's. If there are no neighbors, no action is taken.
      */
@@ -41,6 +61,8 @@ public class ChameleonCritter extends Critter
         {
 
             darken();
+
+
             return;
         }
 

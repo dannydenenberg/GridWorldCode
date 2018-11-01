@@ -49,6 +49,14 @@ public class Actor
         location = null;
     }
 
+    public Actor(Color c)
+    {
+        color = c;
+        direction = Location.NORTH;
+        grid = null;
+        location = null;
+    }
+
     /**
      * Gets the color of this actor.
      * @return the color of this actor
@@ -211,3 +219,5 @@ public class Actor
                 + direction + ",color=" + color + "]";
     }
 }
+
+

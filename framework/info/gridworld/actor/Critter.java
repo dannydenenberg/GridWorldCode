@@ -31,6 +31,18 @@ import java.util.ArrayList;
  */
 public class Critter extends Actor
 {
+    /**
+     * Darkens the actor by the percent of the DARKENING_FACTOR
+     */
+    public void darken()
+    {
+        Color c = getColor();
+        int red = (int) (c.getRed() * (1 - DARKENING_FACTOR));
+        int green = (int) (c.getGreen() * (1 - DARKENING_FACTOR));
+        int blue = (int) (c.getBlue() * (1 - DARKENING_FACTOR));
+
+        setColor(new Color(red, green, blue));
+    }
 
 
     /**
