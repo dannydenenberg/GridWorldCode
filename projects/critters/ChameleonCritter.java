@@ -33,7 +33,7 @@ public class ChameleonCritter extends Critter
     /* Percent of the current color will be darkened by */
     /* Added: 10-31-18 */
     // lose 5% of color value in each step
-    public static final double DARKENING_FACTOR = 0.05;
+    public static final double DARKENING_FACTOR = 0.01;
 
 
     /**
@@ -59,9 +59,9 @@ public class ChameleonCritter extends Critter
         int n = actors.size();
         if (n == 0)
         {
-
-            darken();
-
+            // ADDED BY DANIEL DENENBERG
+            // if there are no characters, darken self
+            this.darken();
 
             return;
         }

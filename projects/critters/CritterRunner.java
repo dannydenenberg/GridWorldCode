@@ -41,6 +41,7 @@ public class CritterRunner
         world.add(new Location(7, 2), new Flower(Color.YELLOW));
         world.add(new Location(4, 4), new Critter());
         world.add(new Location(5, 8), new Critter());
+        world.add(new ChameleonCritter());
         world.show();
     }
 }
