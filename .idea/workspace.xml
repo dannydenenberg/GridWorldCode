@@ -2,11 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38fe27d5-6fb7-47bc-87dc-0906fe0e5b3d" name="Default Changelist" comment="Test for intellij commit">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/sdenend344.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/critters/BlusterCritter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/critters/ChameleonKid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/critters/RockHound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/info/gridworld/actor/Critter.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework/info/gridworld/actor/Critter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/actor/Actor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/actor/Actor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/actor/ActorWorld.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/actor/ActorWorld.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/actor/Bug.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/actor/Bug.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/actor/Critter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/actor/Critter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/grid/AbstractGrid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/grid/AbstractGrid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/grid/BoundedGrid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/grid/BoundedGrid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/grid/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/grid/Location.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/grid/UnboundedGrid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/grid/UnboundedGrid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/AbstractDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/AbstractDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/ColorEditor$RandomColorIcon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/ColorEditor$RandomColorIcon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/DefaultDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/DefaultDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/DisplayMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/DisplayMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/FormLayout.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/FormLayout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/GUIController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/GUIController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/GUIController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/GUIController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/GridPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/GridPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/ImageDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/ImageDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/MenuMaker$ConstructorItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/MenuMaker$ConstructorItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/MenuMaker$MCItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/MenuMaker$MCItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/MenuMaker$MethodItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/MenuMaker$MethodItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/MenuMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/MenuMaker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/PropertySheet$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/PropertySheet$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/PropertySheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/PropertySheet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/PseudoInfiniteViewport.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/PseudoInfiniteViewport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/WorldFrame$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/WorldFrame$16.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/WorldFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/WorldFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/WorldFrame$GUIExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/WorldFrame$GUIExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/WorldFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/WorldFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/world/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/world/World.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projects/ChameleonCritter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projects/ChameleonCritter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projects/CrabCritter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projects/CrabCritter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/critters/BlusterCritter.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/critters/BlusterCritter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/critters/ChameleonKid.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/critters/ChameleonKid.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,14 +120,49 @@
       <usages-collector id="statistics.spring.boot.run.usages" />
       <usages-collector id="statistics.vcs.git.usages" />
     </session>
+    <session id="-1654785241">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1970" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1970" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.go.postfix.template.usages.trigger" />
+      <usages-collector id="statistics.spring.boot.run.usages" />
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/framework/info/gridworld/actor/Actor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="169" column="24" lean-forward="true" selection-start-line="169" selection-start-column="24" selection-end-line="169" selection-end-column="24" />
+            <state relative-caret-position="399">
+              <caret line="33" column="55" lean-forward="true" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#6046#6047#0" expanded="true" />
@@ -109,7 +175,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/critters/CrabCritter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
+            <state relative-caret-position="793">
               <caret line="92" column="30" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
               <folding>
                 <element signature="e#1249#1250#0" expanded="true" />
@@ -120,64 +186,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/critters/ChameleonKid.java">
+        <entry file="file://$PROJECT_DIR$/projects/critters/BlusterCritter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="714">
+              <caret line="34" column="101" selection-start-line="34" selection-start-column="101" selection-end-line="34" selection-end-column="101" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/critters/RockHound.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#580#581#0" expanded="true" />
+                <element signature="e#606#607#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/critters/BlusterCritter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="27" selection-start-column="27" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/critters/CrabRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/critters/ChameleonCritter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="35" column="55" lean-forward="true" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/framework/info/gridworld/actor/Critter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="78" column="46" lean-forward="true" selection-start-line="78" selection-start-column="46" selection-end-line="78" selection-end-column="46" />
+            <state relative-caret-position="-728">
+              <caret line="36" column="4" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -213,14 +239,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/framework/info/gridworld/actor/Flower.java" />
-        <option value="$PROJECT_DIR$/framework/info/gridworld/actor/Critter.java" />
         <option value="$PROJECT_DIR$/projects/critters/CrabCritter.java" />
-        <option value="$PROJECT_DIR$/framework/info/gridworld/actor/Actor.java" />
         <option value="$PROJECT_DIR$/projects/critters/ChameleonCritterRunner.java" />
         <option value="$PROJECT_DIR$/projects/critters/CritterRunner.java" />
         <option value="$PROJECT_DIR$/projects/critters/ChameleonCritter.java" />
-        <option value="$PROJECT_DIR$/projects/critters/ChameleonKid.java" />
         <option value="$PROJECT_DIR$/projects/critters/RockHound.java" />
+        <option value="$PROJECT_DIR$/projects/critters/ChameleonKid.java" />
+        <option value="$PROJECT_DIR$/framework/info/gridworld/actor/Critter.java" />
+        <option value="$PROJECT_DIR$/framework/info/gridworld/actor/Actor.java" />
+        <option value="$PROJECT_DIR$/projects/critters/BlusterCritter.java" />
       </list>
     </option>
   </component>
@@ -230,52 +257,33 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2042" />
-    <option name="y" value="49" />
-    <option name="width" value="1400" />
-    <option name="height" value="971" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1177" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="GridWorldCodeNOV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GridWorldCodeNOV" type="462c0819:PsiDirectoryNode" />
+              <item name="GridWorldCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GridWorldCode" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GridWorldCodeNOV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GridWorldCodeNOV" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GridWorldCodeNOV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GridWorldCodeNOV" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="gridworld" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GridWorldCodeNOV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GridWorldCodeNOV" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="gridworld" type="462c0819:PsiDirectoryNode" />
-              <item name="actor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GridWorldCodeNOV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GridWorldCodeNOV" type="462c0819:PsiDirectoryNode" />
+              <item name="GridWorldCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GridWorldCode" type="462c0819:PsiDirectoryNode" />
               <item name="projects" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GridWorldCodeNOV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GridWorldCodeNOV" type="462c0819:PsiDirectoryNode" />
+              <item name="GridWorldCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GridWorldCode" type="462c0819:PsiDirectoryNode" />
               <item name="projects" type="462c0819:PsiDirectoryNode" />
               <item name="critters" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -289,12 +297,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541782537198" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541858148472" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -308,7 +317,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CrabRunner">
+  <component name="RunManager" selected="Application.ChameleonRunner">
     <configuration name="BoxBugRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BoxBugRunner" />
       <module name="projects" />
@@ -318,6 +327,13 @@
     </configuration>
     <configuration name="ChameleonCritterRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ChameleonCritterRunner" />
+      <module name="projects" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChameleonRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ChameleonRunner" />
       <module name="projects" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -342,9 +358,11 @@
       <item itemvalue="Application.ChameleonCritterRunner" />
       <item itemvalue="Application.CritterRunner" />
       <item itemvalue="Application.CrabRunner" />
+      <item itemvalue="Application.ChameleonRunner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ChameleonRunner" />
         <item itemvalue="Application.CrabRunner" />
         <item itemvalue="Application.CritterRunner" />
         <item itemvalue="Application.ChameleonCritterRunner" />
@@ -370,17 +388,19 @@
       <workItem from="1541434909580" duration="1603000" />
       <workItem from="1541608793383" duration="14000" />
       <workItem from="1541780218512" duration="2539000" />
+      <workItem from="1541856009168" duration="384000" />
+      <workItem from="1541856523530" duration="1903000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8924000" />
+    <option name="totallyTimeSpent" value="11211000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1177" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14765458" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15069222" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -389,7 +409,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.09544469" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.09493087" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -513,9 +533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -549,66 +566,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/boxBug/BoxBugRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/javadoc/info/gridworld/actor/Bug.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/critters/CrabRunner.java">
+    <entry file="file://$PROJECT_DIR$/projects/critters/ChameleonRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/critters/ChameleonKid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/critters/CrabCritter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="92" column="30" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
-          <folding>
-            <element signature="e#1249#1250#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/info/gridworld/actor/Critter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="78" column="46" lean-forward="true" selection-start-line="78" selection-start-column="46" selection-end-line="78" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/critters/ChameleonCritter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
-          <caret line="35" column="55" lean-forward="true" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+          <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/critters/CrabRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/critters/RockHound.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/critters/ChameleonKid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -617,8 +621,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/framework/info/gridworld/actor/Actor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="169" column="24" lean-forward="true" selection-start-line="169" selection-start-column="24" selection-end-line="169" selection-end-column="24" />
+        <state relative-caret-position="399">
+          <caret line="33" column="55" lean-forward="true" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#6046#6047#0" expanded="true" />
@@ -627,20 +631,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/critters/RockHound.java">
+    <entry file="file://$PROJECT_DIR$/projects/critters/CrabCritter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="793">
+          <caret line="92" column="30" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#1284#1285#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/critters/BlusterCritter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        <state relative-caret-position="714">
+          <caret line="34" column="101" selection-start-line="34" selection-start-column="101" selection-end-line="34" selection-end-column="101" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/info/gridworld/actor/Critter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-728">
+          <caret line="36" column="4" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

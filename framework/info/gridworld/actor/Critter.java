@@ -45,6 +45,17 @@ public class Critter extends Actor
     }
 
 
+    public void brighten()
+    {
+        Color c = getColor();
+        int red = (int) (c.getRed() * (1 + DARKENING_FACTOR)); // if you multiply by something over 1, it will increase the color content
+        int green = (int) (c.getGreen() * (1 + DARKENING_FACTOR));
+        int blue = (int) (c.getBlue() * (1 + DARKENING_FACTOR));
+
+        setColor(new Color(red, green, blue));
+    }
+
+
     /**
      * A critter acts by getting a list of other actors, processing that list,
      * getting locations to move to, selecting one of them, and moving to the
