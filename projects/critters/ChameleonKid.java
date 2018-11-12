@@ -22,7 +22,6 @@ public class ChameleonKid extends ChameleonCritter {
     // lose 0.1% of color value in each step
     public static final double DARKENING_FACTOR = 0.001;
 
-
     @Override
     public ArrayList<Actor> getActors() {
         // Get ALL of the neighbors
