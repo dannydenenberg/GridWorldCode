@@ -29,6 +29,14 @@ public class RockEaterBarferCritter extends Critter {
     public RockEaterBarferCritter(int full)
     {
         this.full = full;
+
+        // full cannot be zero
+        if (full == 0)
+        {
+            this.full = 1;
+        }
+
+
         this.rocks = new ArrayList<>();
     }
 
@@ -77,17 +85,18 @@ public class RockEaterBarferCritter extends Critter {
         ArrayList<Actor> neighbors = this.getGrid().getNeighbors(this.getLocation());
 
         // get all of the neighboring rocks
-        List<Actor> rocks = neighbors.stream().filter(a -> a instanceof Rock).collect(Collectors.toList());
+        List<Actor> neighboringRocks = neighbors.stream().filter(a -> a instanceof Rock).collect(Collectors.toList());
 
-        // if there are no neighbors who are rocks, then return the adjacent empty spaces, otherwise return the rocks
-        if (rocks.size() == 0)
+        // if there are no neighbors who are rocks, then return the adjacent empty spaces
+        // or if the critter is full (the `rocks` array is as long as `full`)
+        if (neighboringRocks.size() == 0 || rocks.size() > full)
         {
             return getGrid().getEmptyAdjacentLocations(getLocation());
         }
-        else
+        else // otherwise return the neighboring rocks
         {
             ArrayList<Location> rockLocs = new ArrayList<>();
-            for (Actor a: rocks)
+            for (Actor a: neighboringRocks)
             {
                 rockLocs.add(a.getLocation());
             }
@@ -105,14 +114,6 @@ public class RockEaterBarferCritter extends Critter {
     {
         Actor contentsOfLocation = getGrid().get(loc);
 
-        // error checking if I am off of the board
-        if (contentsOfLocation == null)
-        {
-            removeSelfFromGrid();
-            return;
-        }
-
-
 
         // if there is a rock there
         if (contentsOfLocation instanceof Rock)
@@ -120,12 +121,37 @@ public class RockEaterBarferCritter extends Critter {
             // add the rock to the eaten rocks
             rocks.add(contentsOfLocation);
 
+            // JUST FOR TESTING PURPOSES
+            //System.out.println("I just ate a rock at " + contentsOfLocation.getLocation());
+
             // remove the rock from the grid
             contentsOfLocation.removeSelfFromGrid();
+
+            // move to the new location
+            moveTo(loc);
+        }
+        // if the critter is full and the space is blank, then barf up a rock in the place he just was
+        else if (rocks.size() > full)
+        {
+            // store the location where the rock will be barfed to
+            Location selfLocationBeforeMove = getLocation();
+
+            // make room for the rock
+            moveTo(loc);
+
+            // store and remove the rock the critter is barfing up from the rocks list
+            Actor rockToPutInSpace = rocks.get(0);
+            rocks.remove(0);
+
+            // barf the rock in the space where the critter had moved FROM
+            rockToPutInSpace.putSelfInGrid(getGrid(), selfLocationBeforeMove);
+
+        }
+        else // otherwise, if the space that the critter is moving to is blank, just move there
+        {
+            moveTo(loc);
         }
 
 
-        // move self to the location ==> whether it is a rock that has just been removed or a space, doesn't matter. The critter still has to move
-        moveTo(loc);
     }
 }
