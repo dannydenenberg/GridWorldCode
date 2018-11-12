@@ -19,9 +19,11 @@ import java.util.stream.Collectors;
  * The getActors method will be overwritten to either return all of the neighboring rocks, OR, if there aren't any, all of the neighboring free spaces.
  * If there are no free spaces or rocks,
  */
+
+// I haven't implemented barfing up rocks yet
 public class RockEaterBarferCritter extends Critter {
     // saves all of the rocks which are in the critters stomach (have been eaten and not yet barfed up)
-    private ArrayList<Rock> rocks;
+    private ArrayList<Actor> rocks;
     private int full;
 
     public RockEaterBarferCritter(int full)
@@ -30,14 +32,48 @@ public class RockEaterBarferCritter extends Critter {
         this.rocks = new ArrayList<>();
     }
 
+    /**
+     * Not sure what to use this for
+     * Returning all neighboring rocks
+     * @return
+     */
     @Override
-    public ArrayList<Actor> getActors() {
+    public ArrayList<Actor> getActors()
+    {
+        // there can be a one liner to get all of the neighboring rocks
+        return new ArrayList<>(this.getGrid()
+                .getNeighbors(getLocation())
+                .stream()
+                .filter(neighbor -> neighbor instanceof Rock)
+                .collect(Collectors.toList()));
+    }
 
+    /**
+     * Not sure what to use this for
+     * @param actors
+     */
+    @Override
+    public void processActors(ArrayList<Actor> actors)
+    {
+        //  nothing to do here right now
     }
 
 
+    /**
+     * Select a move location randomly
+     * @param locs
+     * @return
+     */
     @Override
-    public ArrayList<Location> getMoveLocations() {
+    public Location selectMoveLocation(ArrayList<Location> locs)
+    {
+        int locIndex = (int) (Math.random() * locs.size()); // randomly generate the location index
+        return locs.get(locIndex);
+    }
+
+    @Override
+    public ArrayList<Location> getMoveLocations()
+    {
         ArrayList<Actor> neighbors = this.getGrid().getNeighbors(this.getLocation());
 
         // get all of the neighboring rocks
@@ -57,5 +93,39 @@ public class RockEaterBarferCritter extends Critter {
             }
             return rockLocs;
         }
+    }
+
+    /**
+     * If there is a rock in the location, remove it from the grid and add it to the rocks array of what this creature has eaten so far
+     * Otherwise, just move to that spot on the grid
+     * @param loc
+     */
+    @Override
+    public void makeMove(Location loc)
+    {
+        Actor contentsOfLocation = getGrid().get(loc);
+
+        // error checking if I am off of the board
+        if (contentsOfLocation == null)
+        {
+            removeSelfFromGrid();
+            return;
+        }
+
+
+
+        // if there is a rock there
+        if (contentsOfLocation instanceof Rock)
+        {
+            // add the rock to the eaten rocks
+            rocks.add(contentsOfLocation);
+
+            // remove the rock from the grid
+            contentsOfLocation.removeSelfFromGrid();
+        }
+
+
+        // move self to the location ==> whether it is a rock that has just been removed or a space, doesn't matter. The critter still has to move
+        moveTo(loc);
     }
 }
