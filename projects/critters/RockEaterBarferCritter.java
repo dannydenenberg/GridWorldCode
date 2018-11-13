@@ -68,16 +68,85 @@ public class RockEaterBarferCritter extends Critter {
 
 
     /**
-     * Select a move location randomly
+     * Select a move location by choosing which location is closest to another RockEaterBarferCritter
      * @param locs
      * @return
      */
     @Override
     public Location selectMoveLocation(ArrayList<Location> locs)
     {
-        int locIndex = (int) (Math.random() * locs.size()); // randomly generate the location index
-        return locs.get(locIndex);
+        if (locs.size() == 0)
+        {
+            return null;
+        }
+
+        // get all of the other same critters on board
+        ArrayList<Actor> otherRockEaterBarferCrittersOnGrid = new ArrayList<>();
+        for (Location loc : getGrid().getOccupiedLocations())
+        {
+            Actor actorInLocation = getGrid().get(loc);
+            // if it is an instance of the class and it is not this object (it is another critter)
+            if (actorInLocation instanceof RockEaterBarferCritter && !actorInLocation.equals(this))
+            {
+                otherRockEaterBarferCrittersOnGrid.add(actorInLocation);
+            }
+        }
+
+        // if there are no others, pick a random location
+        if (otherRockEaterBarferCrittersOnGrid.size() == 0)
+        {
+            int locIndex = (int) (Math.random() * locs.size()); // randomly generate the location index
+            return locs.get(locIndex);
+        }
+        else
+        {
+            // find which of the other same critters is closest
+            // find which of the possible move locations are closest to the closest critter
+
+            // dist = sqrt((x-x2)(x-x2) + (y-y2)(y-y2)
+            double smallestDistance = 10000000.0;
+            Actor closestBarfingCritter = new Actor();
+            for (Actor a : otherRockEaterBarferCrittersOnGrid)
+            {
+                // if the distance from this actor is smaller than smallest, then that is the new actor that is closest
+                double testingDistance = this.distanceApartFrom(a.getLocation());
+                if (testingDistance < smallestDistance)
+                {
+                    smallestDistance = testingDistance;
+                    closestBarfingCritter = a;
+                }
+            }
+
+
+            smallestDistance = 10000000.0;
+            Location smallestDistanceLocationMove = locs.get(0);
+            // for each of the possible move spaces, pick the one that brings this closest to the closest actor
+            for (Location loc : locs)
+            {
+                double distanceFromCritter = Math.sqrt(Math.pow(closestBarfingCritter.getLocation().getRow() - loc.getRow(),2.0) + Math.pow(closestBarfingCritter.getLocation().getCol() - loc.getCol(),2.0));
+                if (distanceFromCritter < smallestDistance)
+                {
+                    smallestDistance = distanceFromCritter;
+                    smallestDistanceLocationMove = loc;
+                }
+            }
+
+            return smallestDistanceLocationMove;
+        }
     }
+
+
+    /**
+     * Returns the distance between two locations (this and another)
+     * @param other
+     * @return
+     */
+    public double distanceApartFrom(Location other)
+    {
+        return Math.sqrt(Math.pow(this.getLocation().getRow() - other.getRow(), 2.0) + Math.pow(this.getLocation().getCol() - other.getCol(), 2.0));
+    }
+
+
 
     @Override
     public ArrayList<Location> getMoveLocations()
@@ -112,6 +181,13 @@ public class RockEaterBarferCritter extends Critter {
     @Override
     public void makeMove(Location loc)
     {
+        // don't move if there is no where to move to
+        if (loc == null)
+        {
+            return;
+        }
+
+
         Actor contentsOfLocation = getGrid().get(loc);
 
 
