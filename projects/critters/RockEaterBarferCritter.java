@@ -144,8 +144,23 @@ public class RockEaterBarferCritter extends Critter {
         // if it has been going back and forth in the same move locations for a while now, the transport it to a new random location and remove the Actor in that location
         if (hasBeenGoingInSameLocations())
         {
+            // just a variable to hold the random location to be transported to
+            Location randomLocationOnGrid = new Location(0,0);
+            boolean haveFoundFreeSpot = false;
+            // Make sure that the random location CANNOT BE THE LOCATION OF THIS CREATURE OR ANOTHER CREATURE
             // Picks a random location on the grid
-            Location randomLocationOnGrid = new Location((int)(Math.random() * getGrid().getNumRows()), (int)(Math.random() * getGrid().getNumCols()));
+            // remember to put the -1 after getNumRows, because when you get a location on the grid, it is numbered 0 - (# of rows - 1)
+            while (!haveFoundFreeSpot) {
+                randomLocationOnGrid = new Location((int) (Math.random() * (getGrid().getNumRows() - 1)), (int) (Math.random() * (getGrid().getNumCols() - 1)));
+                if (getGrid().get(randomLocationOnGrid) instanceof RockEaterBarferCritter)
+                {
+                    continue;
+                }
+                else
+                {
+                    haveFoundFreeSpot = true;
+                }
+            }
 
             // remove the actor already in that location
             if (getGrid().get(randomLocationOnGrid) != null)
@@ -333,8 +348,13 @@ public class RockEaterBarferCritter extends Critter {
         // store the previous locations
         previousLocations.add(loc);
 
+        // TODO: grid appears to be null after a while......
+        if (getGrid() == null)
+        {
+            return;
+        }
+
         Actor contentsOfLocation = getGrid().get(loc);
-        System.out.println(contentsOfLocation);
 
 
         // if there is a rock there

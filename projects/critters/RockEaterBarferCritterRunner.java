@@ -19,7 +19,7 @@ public class RockEaterBarferCritterRunner {
             world.add(new RockEaterBarferCritter(((int)(Math.random() * 30 + 10))));
         }
 
-        for (int i = 0; i < 30; i++)
+        for (int i = 0; i < 50; i++)
         {
             world.add(new Rock());
         }
