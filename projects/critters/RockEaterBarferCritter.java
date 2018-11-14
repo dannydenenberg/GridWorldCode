@@ -4,7 +4,6 @@ import info.gridworld.actor.Rock;
 import info.gridworld.grid.Location;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -25,6 +24,9 @@ public class RockEaterBarferCritter extends Critter {
     // saves all of the rocks which are in the critters stomach (have been eaten and not yet barfed up)
     private ArrayList<Actor> rocks;
     private int full;
+    private ArrayList<Location> previousLocations;
+    private static int NUMBER_OF_REPEATED_LOCATIONS_MAX = 10;
+    private int numberOfRepeatedLocationsChecks = 0;
 
     public RockEaterBarferCritter(int full)
     {
@@ -38,6 +40,7 @@ public class RockEaterBarferCritter extends Critter {
 
 
         this.rocks = new ArrayList<>();
+        this.previousLocations = new ArrayList<>();
     }
 
     /**
@@ -68,7 +71,65 @@ public class RockEaterBarferCritter extends Critter {
 
 
     /**
-     * Select a move location by choosing which location is closest to another RockEaterBarferCritter
+     * Returns true if the critter has been going back and forth between the same locations
+     * @return
+     */
+    private boolean hasBeenGoingInSameLocations()
+    {
+        // make sure we aren't storing too much data on the locations
+        numberOfRepeatedLocationsChecks++;
+        // if it exceeds a certain number, reset it
+        if (numberOfRepeatedLocationsChecks > NUMBER_OF_REPEATED_LOCATIONS_MAX)
+        {
+            numberOfRepeatedLocationsChecks = 0;
+            return false;
+        }
+
+        // if there is no data, then return false
+        if (this.previousLocations.size() == 0)
+        {
+            return false;
+        }
+
+        int numberOfRepeatedLocations = 0;
+
+        // see how many of the locations were repeated (excluding same references)
+        for (Location loc1 : this.previousLocations)
+        {
+            for (Location loc2 : this.previousLocations)
+            {
+                if (loc1 == loc2) // if they are the same object reference, don't count this iteration
+                {
+                    continue;
+                }
+
+                // if they represent the same object, they are the same location
+                if (loc1.equals(loc2))
+                {
+                    numberOfRepeatedLocations++;
+                }
+            }
+        }
+
+        // if the number of repeated locations is high enough, then it has been going to the same places over and over again
+        if (numberOfRepeatedLocations >= NUMBER_OF_REPEATED_LOCATIONS_MAX)
+        {
+            // reset the locations counter
+            this.previousLocations = new ArrayList<>();
+            numberOfRepeatedLocations = 0;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+
+
+    /**
+     * Select a move location by choosing which location is closest to another RockEaterBarferCritter.
+     * If there are no other RockEaterBarferCritter creatures on the board, then this will try to move to the next possible spot closest to the closest piece of food (rock)
      * @param locs
      * @return
      */
@@ -80,8 +141,29 @@ public class RockEaterBarferCritter extends Critter {
             return null;
         }
 
+        // if it has been going back and forth in the same move locations for a while now, the transport it to a new random location and remove the Actor in that location
+        if (hasBeenGoingInSameLocations())
+        {
+            // Picks a random location on the grid
+            Location randomLocationOnGrid = new Location((int)(Math.random() * getGrid().getNumRows()), (int)(Math.random() * getGrid().getNumCols()));
+
+            // remove the actor already in that location
+            if (getGrid().get(randomLocationOnGrid) != null)
+            {
+                getGrid().get(randomLocationOnGrid).removeSelfFromGrid();
+            }
+            return randomLocationOnGrid;
+        }
+
+
+
+
+        /* -------------------------------------------- GET VARIABLES IMPORTANT TO INTELLIGENCE ---------------------------------------------*/
         // get all of the other same critters on board
         ArrayList<Actor> otherRockEaterBarferCrittersOnGrid = new ArrayList<>();
+        ArrayList<Actor> otherRocksOnGrid = new ArrayList<>();
+
+        // compile a list of all Rocks on the grid and all RockEaterBarferCritters on the grid
         for (Location loc : getGrid().getOccupiedLocations())
         {
             Actor actorInLocation = getGrid().get(loc);
@@ -90,14 +172,65 @@ public class RockEaterBarferCritter extends Critter {
             {
                 otherRockEaterBarferCrittersOnGrid.add(actorInLocation);
             }
+            else if (actorInLocation instanceof Rock)
+            {
+                otherRocksOnGrid.add(actorInLocation);
+            }
         }
 
-        // if there are no others, pick a random location
+
+
+
+
+        /**
+         * if there are no other RockEaterBarferCritters on the grid, pick the location of the nearest piece of food
+         */
         if (otherRockEaterBarferCrittersOnGrid.size() == 0)
         {
-            int locIndex = (int) (Math.random() * locs.size()); // randomly generate the location index
-            return locs.get(locIndex);
+            // if there are no other rocks on the grid, choose a free space at random
+            if (otherRocksOnGrid.size() == 0)
+            {
+                int locIndex = (int) (Math.random() * locs.size()); // randomly generate the location index
+                return locs.get(locIndex);
+            }
+            // otherwise choose the location of the spot that will bring this closest to the closest rock
+            else
+            {
+                // compile a list of all of the locations of the rocks on the grid
+                ArrayList<Location> otherRockLocations = new ArrayList<>(otherRocksOnGrid.stream()
+                        .map(Actor::getLocation)
+                        .collect(Collectors.toList()));
+
+                // find the location of the nearest rock of all of the rocks on the grid
+                double smallestDistanceToRock = 100000000.0;
+                Location closestRockToSelf = otherRockLocations.get(0);
+                for (Location rockLoc : otherRockLocations)
+                {
+                    if (distanceApartFrom(rockLoc) < smallestDistanceToRock)
+                    {
+                        smallestDistanceToRock = distanceApartFrom(rockLoc);
+                        closestRockToSelf = rockLoc;
+                    }
+                }
+
+
+                // find one of the possible locations that is closest to the closest rock
+                double smallestDistanceFromNewSpotToClosestRock = 1000000000.0;
+                Location closestToClosestRock = locs.get(0);
+                for (Location location : locs)
+                {
+                    if (distanceBetween(location, closestRockToSelf) < smallestDistanceFromNewSpotToClosestRock)
+                    {
+                        smallestDistanceFromNewSpotToClosestRock = distanceBetween(location, closestRockToSelf);
+                        closestToClosestRock = location;
+                    }
+                }
+
+                return closestToClosestRock;
+            }
         }
+
+        // choose the location that will bring this closest to the nearest RockEaterBarferCritter on the grid
         else
         {
             // find which of the other same critters is closest
@@ -123,7 +256,9 @@ public class RockEaterBarferCritter extends Critter {
             // for each of the possible move spaces, pick the one that brings this closest to the closest actor
             for (Location loc : locs)
             {
-                double distanceFromCritter = Math.sqrt(Math.pow(closestBarfingCritter.getLocation().getRow() - loc.getRow(),2.0) + Math.pow(closestBarfingCritter.getLocation().getCol() - loc.getCol(),2.0));
+                // find the distance from the location that this would move to to the closest critter from the current location of this critter
+                double distanceFromCritter = Math.sqrt(Math.pow(closestBarfingCritter.getLocation().getRow() - loc.getRow(),2.0)
+                        + Math.pow(closestBarfingCritter.getLocation().getCol() - loc.getCol(),2.0));
                 if (distanceFromCritter < smallestDistance)
                 {
                     smallestDistance = distanceFromCritter;
@@ -136,14 +271,22 @@ public class RockEaterBarferCritter extends Critter {
     }
 
 
+
+
     /**
      * Returns the distance between two locations (this and another)
      * @param other
      * @return
      */
-    public double distanceApartFrom(Location other)
+    private double distanceApartFrom(Location other)
     {
         return Math.sqrt(Math.pow(this.getLocation().getRow() - other.getRow(), 2.0) + Math.pow(this.getLocation().getCol() - other.getCol(), 2.0));
+    }
+
+
+    private double distanceBetween(Location first, Location other)
+    {
+        return Math.sqrt(Math.pow(first.getRow() - other.getRow(), 2.0) + Math.pow(first.getCol() - other.getCol(), 2.0));
     }
 
 
@@ -187,8 +330,11 @@ public class RockEaterBarferCritter extends Critter {
             return;
         }
 
+        // store the previous locations
+        previousLocations.add(loc);
 
         Actor contentsOfLocation = getGrid().get(loc);
+        System.out.println(contentsOfLocation);
 
 
         // if there is a rock there

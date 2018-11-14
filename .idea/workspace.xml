@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a951d092-fa59-4d6a-9377-61a140f97433" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/actor/Actor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/actor/Actor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/actor/ActorWorld.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/actor/ActorWorld.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/actor/Bug.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/actor/Bug.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/actor/Critter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/actor/Critter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/grid/AbstractGrid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/grid/AbstractGrid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/grid/BoundedGrid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/grid/BoundedGrid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/grid/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/grid/Location.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/grid/UnboundedGrid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/grid/UnboundedGrid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/AbstractDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/AbstractDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/ColorEditor$RandomColorIcon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/ColorEditor$RandomColorIcon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/DefaultDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/DefaultDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/DisplayMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/DisplayMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/FormLayout.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/FormLayout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/GUIController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/GUIController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/GUIController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/GUIController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/GridPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/GridPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/ImageDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/ImageDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/MenuMaker$ConstructorItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/MenuMaker$ConstructorItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/MenuMaker$MCItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/MenuMaker$MCItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/MenuMaker$MethodItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/MenuMaker$MethodItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/MenuMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/MenuMaker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/PropertySheet$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/PropertySheet$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/PropertySheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/PropertySheet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/PseudoInfiniteViewport.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/PseudoInfiniteViewport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/WorldFrame$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/WorldFrame$16.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/WorldFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/WorldFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/WorldFrame$GUIExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/WorldFrame$GUIExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/WorldFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/gui/WorldFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/world/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GridWorldCodeNOV/info/gridworld/world/World.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projects/BlusterCritter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projects/BlusterCritter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projects/ChameleonKid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projects/ChameleonKid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projects/RockEaterBarferCritter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projects/RockEaterBarferCritter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/critters/RockEaterBarferCritter.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/critters/RockEaterBarferCritter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/critters/RockEaterBarferCritterRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/projects/critters/RockEaterBarferCritterRunner.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1654785241">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gif" value="1" />
+          <entry key="java" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Image" value="1" />
+          <entry key="JAVA" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="4290" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="4290" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.go.postfix.template.usages.trigger" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/critters/RockEaterBarferCritter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="336" column="47" selection-start-line="336" selection-start-column="47" selection-end-line="336" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/critters/RockEaterBarferCritterRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#273#274#0" expanded="true" />
+                <element signature="e#296#297#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/projects/critters/RockEaterBarferCritterRunner.java" />
+        <option value="$PROJECT_DIR$/projects/critters/RockEaterBarferCritter.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1177" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="GridWorldCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GridWorldCode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GridWorldCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GridWorldCode" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GridWorldCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GridWorldCode" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="critters" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542161529544" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="RockEaterBarferCritterRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RockEaterBarferCritterRunner" />
+      <module name="projects" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RockEaterBarferCritterRunner" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a951d092-fa59-4d6a-9377-61a140f97433" name="Default Changelist" comment="" />
+      <created>1542152925040</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542152925040</updated>
+      <workItem from="1542152928314" duration="44000" />
+      <workItem from="1542152987298" duration="3902000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3946000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1920" height="1177" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13365282" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.3299539" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3299539" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Cargo" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="SciView" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
+      <window_info anchor="right" id="Maven Projects" order="10" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="67" column="47" lean-forward="true" selection-start-line="67" selection-start-column="47" selection-end-line="67" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/info/gridworld/actor/ActorWorld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/info/gridworld/actor/Critter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1695">
+          <caret line="316" selection-start-line="316" selection-end-line="316" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/critters/RockEaterBarferCritterRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/critters/CrabCritter.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/critters/RockEaterBarferCritter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="336" column="47" selection-start-line="336" selection-start-column="47" selection-end-line="336" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
